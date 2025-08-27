@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Braden Wendt</title>
+  <meta name="description" content="Personal website for Braden Wendt: projects, resume, and contact." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #3b82f6;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 80% -10%, #1f2937 0%, var(--bg) 45%);
+      color: var(--text);
+      display: flex; align-items: center; justify-content: center;
+      padding: 28px;
+    }
+    .wrap { width: 100%; max-width: 920px; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .logo { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, var(--accent), #60a5fa); display: grid; place-items: center; font-weight: 800; color: white; }
+    nav a { color: var(--text); text-decoration: none; margin-left: 16px; font-weight: 600; }
+    nav a:hover { color: var(--accent); }
+
+    .hero { margin-top: 28px; background: color-mix(in srgb, var(--card) 90%, transparent); border: 1px solid #1f2937; border-radius: 16px; padding: 28px; box-shadow: 0 20px 60px rgba(0,0,0,.35); }
+    .hero h1 { margin: 0 0 6px; font-size: clamp(28px, 4vw, 40px); }
+    .hero p { margin: 0; color: var(--muted); max-width: 70ch; }
+    .cta { margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { padding: 10px 14px; border-radius: 10px; border: 1px solid #374151; background: #111827; color: var(--text); text-decoration: none; font-weight: 600; }
+    .btn.primary { background: var(--accent); border-color: #2563eb; }
+
+    .grid { margin-top: 22px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    .card { background: #0b1220; border: 1px solid #1f2937; border-radius: 14px; padding: 18px; }
+    .card h3 { margin: 0 0 6px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); }
+    footer { margin-top: 26px; color: var(--muted); font-size: 14px; text-align: center; }
+
+    /* Small enhancements */
+    a.inline { color: var(--accent); text-decoration: none; }
+    a.inline:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">BW</div>
+        <div>
+          <strong>Braden Wendt</strong><br />
+          <span style="color: var(--muted);">Developer • Analytics • Logistics Tech</span>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="about">
+      <h1>Hello, I am Braden.</h1>
+      <p>
+        I build useful things across software, data, and logistics. Interests include bioinformatics pipelines
+        (Kraken2, Bowtie2, Snakemake on HPC), CRM engineering on Salesforce, and clean automation that saves people time.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See projects</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section class="grid" id="projects" aria-label="Featured projects">
+      <article class="card">
+        <h3>HPC Bioinformatics</h3>
+        <p>Processed thousands of SRR samples, 11 TB+, Kraken2 + Bowtie2, on NAU Monsoon. Reports, SNP calls, automation.</p>
+      </article>
+      <article class="card">
+        <h3>Faculty Workload Tool</h3>
+        <p>Excel UI + Python backend to balance teaching loads. Improved transparency and saved hours for admins.</p>
+      </article>
+      <article class="card">
+        <h3>Salesforce App Dev</h3>
+        <p>Dashboards, CIP optimization, backend automation, and Xactly integrations for executive reporting.</p>
+      </article>
+    </section>
+
+    <section class="hero" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a class="inline" href="mailto:you@bradenwendt.com">you@bradenwendt.com</a> • LinkedIn: <a class="inline" href="https://www.linkedin.com/in/bradenwendt" target="_blank" rel="noreferrer noopener">linkedin.com/in/bradenwendt</a></p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Braden Wendt. All rights reserved.
+      <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    </footer>
+  </div>
+</body>
+</html>
