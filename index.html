@@ -50,6 +50,9 @@
           </div>
         </div>
         <div class="panel">
+          <h3>Counter</h3>
+          <div class="inner">
+            <div id="counter">Loading…</div>
         </div>
       </aside>
 
@@ -100,7 +103,18 @@
   </div>
 
   <script>
+    //grab year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Visitor counter using CountAPI
+  fetch('https://api.countapi.xyz/hit/bradenwendt.github.io/website')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('counter').textContent = "You are visitor #" + data.value;
+    })
+    .catch(() => {
+      document.getElementById('counter').textContent = "Welcome!";
+    });
   </script>
 </body>
 </html>
