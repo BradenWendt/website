@@ -4,126 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>bradenwendt.com — Official Site</title>
-  <meta name="description" content="Braden Wendt personal website. Projects, photos, blog, and contact.">
-  <link rel="icon" href="favicon.ico">
-  <style>
-    /* === 2000s and 2010s mashup styles === */
-    body {
-      margin: 0;
-      background: #b5c7d3 url("assets/bg-stars.gif") repeat; /* tile background like old sites */
-      font-family: Tahoma, Verdana, Arial, sans-serif; /* classic web safe */
-      color: #222;
-    }
-    #wrapper {
-      width: 920px;
-      margin: 24px auto;
-      background: #ffffff;
-      border: 1px solid #6b8aa0;
-      box-shadow: 0 0 12px rgba(0,0,0,0.25);
-    }
-    /* Header with glossy 2010s gradient */
-    #header {
-      background: linear-gradient(#4f79a6, #345d88);
-      color: #fff;
-      padding: 16px 18px;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-    #logo {
-      width: 60px; height: 60px;
-      border-radius: 8px;
-      background: radial-gradient(circle at 30% 30%, #ffffff 0%, #9cc1ff 40%, #2a5e9e 100%);
-      border: 2px solid rgba(255,255,255,0.65);
-      box-shadow: inset 0 0 8px rgba(0,0,0,0.25), 0 2px 8px rgba(0,0,0,0.35);
-      display: grid; place-items: center;
-      color: #0b325a; font-weight: 900; font-size: 20px; text-shadow: 0 1px 0 #fff;
-    }
-    #title h1 { margin: 0; font-size: 26px; letter-spacing: .5px; }
-    #title small { color: #e2ecf7; }
-    /* Navbar like early web with tabs */
-    #nav {
-      background: #efefef;
-      border-top: 1px solid #c8d6e2;
-      border-bottom: 1px solid #c8d6e2;
-      padding: 8px 12px;
-      display: flex; flex-wrap: wrap; gap: 8px;
-    }
-    .tab {
-      background: linear-gradient(#ffffff, #e6eef6);
-      border: 1px solid #9fb6c8;
-      border-radius: 6px;
-      padding: 6px 10px;
-      text-decoration: none; color: #274f7c; font-weight: bold;
-      box-shadow: inset 0 1px 0 #fff;
-    }
-    .tab:hover { background: linear-gradient(#ffffff, #d9e8f6); }
-
-    /* Layout with left sidebar and content table vibe */
-    #content {
-      display: grid;
-      grid-template-columns: 240px 1fr;
-      gap: 0;
-      min-height: 520px;
-    }
-    #sidebar {
-      background: #f8fbff;
-      border-right: 1px solid #c8d6e2;
-      padding: 12px;
-    }
-    .panel {
-      margin-bottom: 14px;
-      background: #ffffff;
-      border: 1px solid #c8d6e2;
-    }
-    .panel h3 {
-      margin: 0; font-size: 14px; background: #e8f1fa; padding: 8px 10px; border-bottom: 1px solid #c8d6e2;
-      text-transform: uppercase; letter-spacing: .8px; color: #345d88;
-    }
-    .panel .inner { padding: 10px; font-size: 14px; }
-    .blink { animation: blink 1.2s step-start infinite; }
-    @keyframes blink { 50% { opacity: 0; } }
-
-    #main { padding: 16px 18px; }
-    .hero {
-      background: #fff url("assets/shine.png") no-repeat 120% -40px;
-      border: 1px solid #c8d6e2;
-      padding: 16px; border-radius: 8px;
-    }
-    .hero h2 { margin-top: 0; }
-    .btn {
-      display: inline-block; margin: 6px 6px 0 0; padding: 8px 12px;
-      background: linear-gradient(#7ec0ff, #3d8be8);
-      color: #fff; text-decoration: none; font-weight: bold; border-radius: 6px; border: 1px solid #2f6bb6;
-      text-shadow: 0 1px 0 rgba(0,0,0,0.2);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.6), 0 2px 3px rgba(0,0,0,0.2);
-    }
-    .btn:active { transform: translateY(1px); }
-
-    /* Photo gallery thumbnails like old lightbox days */
-    .thumbs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
-    .thumbs a { display: inline-block; border: 1px solid #9fb6c8; padding: 3px; background: #fff; }
-    .thumbs img { width: 120px; height: 80px; object-fit: cover; display: block; }
-
-    /* Footer */
-    #footer { text-align: center; font-size: 12px; color: #3c5874; background: #e9f2fb; border-top: 1px solid #c8d6e2; padding: 10px; }
-    #footer small { color: #5b7ea2; }
-
-    /* Old school notice bar */
-    marquee { background: #274f7c; color: #fff; padding: 6px 10px; }
-
-    /* Links */
-    a { color: #1b4f8a; }
-  </style>
+  <title>Your Site Title</title>
+  <meta name="description" content="Short description here.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="wrapper">
     <div id="header">
-      <div id="logo">BW</div>
+      <div id="logo">LOGO</div>
       <div id="title">
-        <h1>Braden Wendt <span class="blink">_</span></h1>
-        <small>Official Site • since <span id="since">2025</span></small>
+        <h1>Your Name</h1>
+        <small>Tagline or role</small>
       </div>
     </div>
 
@@ -133,92 +25,85 @@
       <a class="tab" href="#photos">Photos</a>
       <a class="tab" href="#blog">Blog</a>
       <a class="tab" href="#contact">Contact</a>
-      <a class="tab" href="assets/Braden_Wendt_Resume.pdf">Resume</a>
+      <a class="tab" href="assets/Resume.pdf">Resume</a>
     </div>
 
-    <marquee behavior="scroll" direction="left" scrollamount="4">Welcome to my corner of the web. Updates below. Add me on LinkedIn: linkedin.com/in/bradenwendt • Email: you@bradenwendt.com</marquee>
+    <div id="ticker">Welcome. Edit this line in index.html to add a short site update.</div>
 
     <div id="content">
-      <!-- Sidebar left -->
       <aside id="sidebar">
         <div class="panel">
-          <h3>About Me</h3>
+          <h3>About</h3>
           <div class="inner">
-            <img src="assets/me.jpg" alt="Braden portrait" width="200" height="200" style="border:1px solid #9fb6c8; padding:2px; background:#fff; display:block; margin:0 auto 8px; object-fit:cover;">
-            <p>Developer and problem solver. Logistics tech, data, and bioinformatics. Based in Arizona.</p>
+            <!-- Replace assets/me.jpg with your own image. 200x200 works well. -->
+            <img src="assets/me.jpg" alt="Your portrait" width="200" height="200" class="portrait">
+            <p>Write a short intro here. Keep it 2 or 3 sentences.</p>
           </div>
         </div>
         <div class="panel">
-          <h3>Now Playing</h3>
+          <h3>Links</h3>
           <div class="inner">
-            <ul style="margin:0; padding-left:18px;">
-              <li>Learning: Git and static sites</li>
-              <li>Project: Personal website v1</li>
-              <li>Goal: Keep it retro and simple</li>
+            <ul>
+              <li><a href="https://example.com" target="_blank" rel="noopener">Example link</a></li>
+              <li><a href="#" target="_blank" rel="noopener">Another link</a></li>
             </ul>
           </div>
         </div>
         <div class="panel">
-          <h3>Visitor Counter</h3>
-          <div class="inner" id="counter">You are visitor #<span>000123</span> ✅</div>
+          <h3>Counter</h3>
+          <div class="inner">You are visitor #<span>000001</span></div>
         </div>
       </aside>
 
-      <!-- Main content right -->
       <main id="main">
         <section class="hero" id="home">
           <h2>Welcome</h2>
-          <p>This site is built with plain HTML and CSS. No frameworks, no build tools, just files. The vibe is 2000s and early 2010s. Tabs, gradients, tiled backgrounds, and a marquee for good luck.</p>
-          <a class="btn" href="#projects">See Projects</a>
-          <a class="btn" href="#photos">Open Gallery</a>
+          <p>This is a basic static site starter. Plain HTML and CSS. No build tools. No frameworks. Design nods to 2000s and early 2010s.</p>
+          <p>Edit <code>index.html</code> and <code>style.css</code> to make it your own.</p>
         </section>
 
-        <section id="projects" style="margin-top:16px;">
+        <section id="projects">
           <h2>Projects</h2>
           <ul>
-            <li><strong>HPC Bioinformatics</strong> — Kraken2, Bowtie2, Snakemake on NAU Monsoon. Thousands of SRR samples processed.</li>
-            <li><strong>Faculty Workload Tool</strong> — Excel UI with Python logic to balance workloads.</li>
-            <li><strong>Salesforce App Dev</strong> — Dashboards and automation for executive reporting.</li>
+            <li><strong>Project One</strong> — one line description. <a href="#">link</a></li>
+            <li><strong>Project Two</strong> — one line description. <a href="#">link</a></li>
+            <li><strong>Project Three</strong> — one line description. <a href="#">link</a></li>
           </ul>
         </section>
 
-        <section id="photos" style="margin-top:16px;">
+        <section id="photos">
           <h2>Photos</h2>
-          <p>Drop images in <code>assets/photos/</code> then link them as thumbnails below. Clicking a thumb opens the full image.</p>
+          <p>Add images under <code>assets/photos/</code>. Update the thumbnails and links below.</p>
           <div class="thumbs">
-            <a href="assets/photos/trip-01.jpg" target="_blank" rel="noopener"><img src="assets/photos/trip-01.jpg" alt="Trip photo 1"></a>
-            <a href="assets/photos/trip-02.jpg" target="_blank" rel="noopener"><img src="assets/photos/trip-02.jpg" alt="Trip photo 2"></a>
-            <a href="assets/photos/trip-03.jpg" target="_blank" rel="noopener"><img src="assets/photos/trip-03.jpg" alt="Trip photo 3"></a>
+            <a href="assets/photos/sample-1.jpg" target="_blank" rel="noopener"><img src="assets/photos/sample-1.jpg" alt="Sample 1"></a>
+            <a href="assets/photos/sample-2.jpg" target="_blank" rel="noopener"><img src="assets/photos/sample-2.jpg" alt="Sample 2"></a>
+            <a href="assets/photos/sample-3.jpg" target="_blank" rel="noopener"><img src="assets/photos/sample-3.jpg" alt="Sample 3"></a>
           </div>
         </section>
 
-        <section id="blog" style="margin-top:16px;">
+        <section id="blog">
           <h2>Updates</h2>
           <ul>
-            <li>[<span id="today"></span>] Site launched. Hello world.</li>
-            <li>More posts coming soon. Keeping things nostalgic.</li>
+            <li>[2025-08-27] Site created. Hello world.</li>
+            <li>Add more updates as you go.</li>
           </ul>
         </section>
 
-        <section id="contact" style="margin-top:16px;">
+        <section id="contact">
           <h2>Contact</h2>
-          <p>Email: <a href="mailto:you@bradenwendt.com">you@bradenwendt.com</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/bradenwendt" target="_blank" rel="noopener">linkedin.com/in/bradenwendt</a></p>
+          <p>Email: you@your-domain.com</p>
+          <p>LinkedIn: https://www.linkedin.com/in/your-handle</p>
         </section>
       </main>
     </div>
 
     <div id="footer">
-      <small>© <span id="year"></span> Braden Wendt. Last updated <span id="last"></span>.</small>
+      <small>© <span id="year"></span> Your Name</small>
     </div>
   </div>
 
   <script>
-    // Minimal JS to set dates
-    const now = new Date();
-    document.getElementById('year').textContent = now.getFullYear();
-    document.getElementById('today').textContent = now.toISOString().slice(0,10);
-    document.getElementById('last').textContent = now.toLocaleString();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
