@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog – Braden Wendt</title>
+  <meta name="description" content="Blog posts and updates by Braden Wendt.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <div id="logo">BW</div>
+      <div id="title">
+        <h1>Braden Wendt</h1>
+        <small>Technology · Projects · Writing</small>
+      </div>
+      <button id="themeToggle" title="Toggle theme">Dark mode</button>
+    </div>
+
+    <div id="nav">
+      <a class="tab" href="index.html">Home</a>
+      <a class="tab" href="projects.html">Projects</a>
+      <a class="tab" href="photos.html">Photos</a>
+      <a class="tab" href="blog.html">Blog</a>
+      <a class="tab" href="contact.html">Contact</a>
+      <a class="tab" href="assets/Resume.pdf">Resume</a>
+    </div>
+
+    <div id="ticker">Welcome! Use the tabs above to explore.</div>
+
+    <div id="content">
+      <aside id="sidebar">
+        <div class="panel">
+          <h3>About the Blog</h3>
+          <div class="inner">
+            Write posts in simple HTML or Markdown and link them here. Later you can switch to a generator (Jekyll/Hugo).
+          </div>
+        </div>
+      </aside>
+
+      <main id="main">
+        <section>
+          <h2>Blog</h2>
+          <ul id="blog-list"><li>Loading…</li></ul>
+        </section>
+      </main>
+    </div>
+
+    <div id="footer">
+      <small>© <span id="year"></span> Braden Wendt</small>
+    </div>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/main.js"></script>
+</body>
+</html>

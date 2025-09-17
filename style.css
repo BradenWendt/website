@@ -101,3 +101,57 @@ body {
 #footer small { color: #5b7ea2; }
 
 a { color: #1b4f8a; }
+
+/* ===== Theme (Dark) ===== */
+:root[data-theme="dark"] {
+  --blue1: #2f3d52;
+  --blue2: #1a2432;
+  --link: #a7c4ff;
+  --border: #2b3b4a;
+  --panel: #223043;
+  --text: #e6eef7;
+  --bg: #0f1620;
+}
+:root[data-theme="dark"] body {
+  color: var(--text);
+}
+:root[data-theme="dark"] #wrapper { border-color: #2b3b4a; }
+:root[data-theme="dark"] #nav { background: #1b2735; border-color: #2b3b4a; }
+:root[data-theme="dark"] .tab { background: linear-gradient(#263345, #1b2735); color: #dbe8ff; border-color: #3a4d61; }
+:root[data-theme="dark"] #sidebar { background: #121a24; }
+:root[data-theme="dark"] .panel { background: #0f1620; border-color: #2b3b4a; }
+:root[data-theme="dark"] .panel h3 { color: #c9ddff; }
+:root[data-theme="dark"] .hero, :root[data-theme="dark"] #main, :root[data-theme="dark"] .thumbs a { background: #0f1620; }
+:root[data-theme="dark"] a { color: var(--link); }
+:root[data-theme="dark"] #footer { background: #141d29; border-top-color: #2b3b4a; color: #a7c4ff; }
+
+/* Theme toggle button */
+#themeToggle {
+  margin-left: auto;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #9fb6c8;
+  background: linear-gradient(#ffffff, #e6eef6);
+  cursor: pointer;
+  font-weight: bold;
+}
+:root[data-theme="dark"] #themeToggle {
+  border-color: #3a4d61;
+  background: linear-gradient(#263345, #1b2735);
+  color: #dbe8ff;
+}
+
+/* ===== Lightbox ===== */
+.lb-overlay { position: fixed; inset: 0; display: none; }
+.lb-overlay.open { display: block; z-index: 1000; }
+.lb-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.8); }
+.lb-content { position: absolute; inset: 0; display: grid; place-items: center; padding: 24px; }
+.lb-image { max-width: 90vw; max-height: 80vh; box-shadow: 0 10px 40px rgba(0,0,0,0.6); border-radius: 8px; }
+.lb-caption { color: #fff; text-align: center; margin-top: 10px; }
+.lb-close, .lb-prev, .lb-next {
+  position: absolute; background: rgba(255,255,255,0.2); color: #fff; border: 1px solid rgba(255,255,255,0.5);
+  width: 40px; height: 40px; border-radius: 20px; display: grid; place-items: center; cursor: pointer; font-size: 24px;
+}
+.lb-close { top: 18px; right: 18px; }
+.lb-prev { left: 18px; top: 50%; transform: translateY(-50%); }
+.lb-next { right: 18px; top: 50%; transform: translateY(-50%); }

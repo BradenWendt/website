@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects – Braden Wendt</title>
+  <meta name="description" content="Projects and case studies by Braden Wendt.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <div id="logo">BW</div>
+      <div id="title">
+        <h1>Braden Wendt</h1>
+        <small>Technology · Projects · Writing</small>
+      </div>
+      <button id="themeToggle" title="Toggle theme">Dark mode</button>
+    </div>
+
+    <div id="nav">
+      <a class="tab" href="index.html">Home</a>
+      <a class="tab" href="projects.html">Projects</a>
+      <a class="tab" href="photos.html">Photos</a>
+      <a class="tab" href="blog.html">Blog</a>
+      <a class="tab" href="contact.html">Contact</a>
+      <a class="tab" href="assets/Resume.pdf">Resume</a>
+    </div>
+
+    <div id="ticker">Welcome! Use the tabs above to explore.</div>
+
+    <div id="content">
+      <aside id="sidebar">
+        <div class="panel">
+          <h3>About this page</h3>
+          <div class="inner">
+            Case studies of selected work. Each project has a dedicated page with goals, approach, tech stack, and outcomes.
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Filters (future)</h3>
+          <div class="inner">
+            Add filters like Year · Topic · Tech when you have more projects.
+          </div>
+        </div>
+      </aside>
+
+      <main id="main">
+        <section class="hero">
+          <h2>Projects</h2>
+          <p>Here are a few highlights. Click through for details.</p>
+          <ul>
+            <li><strong>Haemophilus influenzae SNP Pipeline</strong> — Kraken2/Bowtie2/Snakemake on NAU HPC. <a href="project-template.html">Read case study</a></li>
+            <li><strong>Faculty Workload Automation</strong> — Excel + Python workflow for Dean’s office. <a href="project-template.html">Read case study</a></li>
+            <li><strong>CRM Dashboards @ APLL</strong> — Salesforce + Xactly reporting automation. <a href="project-template.html">Read case study</a></li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <div id="footer">
+      <small>© <span id="year"></span> Braden Wendt</small>
+    </div>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
